@@ -1,48 +1,74 @@
 <header id="main-header" class="main-header">
   <!--topbar-->
-  {% include "./widgets/topbar.html" %}
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <ul class="topsocial">
+            <li><a href="https://www.facebook.com/Yadah-fc-409607682730210" target="__blank" class="fb"><i
+                  class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/fc_yadah" target="__blank" class="tw"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/fcyadah/" target="__blank" class="insta"><i
+                  class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <ul class="toplinks">
+            <li class="lang-btn">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ENG </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="javascript:void(0);">ENG</a>
+                </div>
+              </div>
+            </li>
+            <li class="currency-btn">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="currencydropdown"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> USD </button>
+                <div class="dropdown-menu" aria-labelledby="currencydropdown">
+                  <a class="dropdown-item" href="javascript:void(0)">USD</a>
+                  <a class="dropdown-item" href="javascript:void(0)">ZWL</a>
+                </div>
+              </div>
+            </li>
+            <li class="acctount-btn"> <a href="dashboard">My Account</a> </li>
+            <li class="search-btn"> <a class="search-icon" href="#search"><i class="fas fa-search"></i></a>
+            </li>
+          </ul>
+
+          <div id="search">
+            <button type="button" class="close">×</button>
+            <form class="search-overlay-form">
+              <input type="search" value="" placeholder="type keyword(s) here" />
+              <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
   <!--topbar end-->
   <!--Logo + Navbar Start-->
   <div class="logo-navbar">
     <div class="container">
       <div class="row">
         <div class="col-md-2 col-sm-5">
-          <div class="logo"><a href="index.html"><img src="static/images/logo-dark.png" alt=""></a></div>
+          <div class="logo"><a href="/"><img src="static/images/logo-dark.png" alt=""></a></div>
         </div>
         <div class="col-md-10 col-sm-7">
           <nav class="main-nav">
             <ul>
-              <li class="nav-item"> <a href="/">Home</a></li>
-              <li class="nav-item drop-down"> <a href="javascript:void(0)">Matches</a>
-                <ul>
-                  <li><a href="/upcoming-match">Upcoming Match</a></li>
-                  <li><a href="/match-results">Match Results</a></li>
-                  <li><a href="/match-details">Match Details</a></li>
-                </ul>
-              </li>
-              <li class="nav-item drop-down"> <a href="javascript:void(0)">Players</a>
-                <ul>
-                  <li><a href="team-one.html">Team One</a></li>
-                  <li><a href="team-details.html">Team Details</a></li>
-                  <li><a href="staff-details.html">Staff Details</a></li>
-                </ul>
-              </li>
-              <li class="nav-item drop-down"> <a href="javascript:void(0)">Features</a>
-                <ul>
-                  <li> <a href="javascript:void(0)">Shop</a></li>
-                  <li> <a href="javascript:void(0)">Gallery</a></li>
-                </ul>
-              </li>
-              <li class="nav-item drop-down"> <a href="javascript:void(0)">News</a>
-                <ul>
-                  <li><a href="news-grid.html">News Grid</a></li>
-                  <li><a href="news-details.html">News Details</a></li>
-                </ul>
-              </li>
-              <li class="nav-item drop-down"> <a href="fixtures-layout-1.html">Fixtures</a></li>
-
-              <li class="nav-item drop-down"> <a href="/contact">Contact</a></li>
-              <li class="nav-item buy-ticket"> <a href="#">Buy Tickets</a> </li>
+              <li class="nav-item"><a href="/">Home</a></li>
+              <li class="nav-item drop-down"> <a href="about">About Club</a></li>
+              <li class="nav-item drop-down"> <a href="team">Team</a></li>
+              <li class="nav-item drop-down"> <a href="gallery">Gallery</a></li>
+              <li class="nav-item drop-down"> <a href="fixtures">Fixtures</a></li>
+              <li class="nav-item drop-down"> <a href="contact">Contact</a></li>
+              <li class="nav-item buy-ticket"> <a href="signup">Sign Up</a> </li>
             </ul>
           </nav>
         </div>

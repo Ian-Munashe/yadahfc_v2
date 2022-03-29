@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="static/images/fav.png" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="static/css/custom.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+  <link rel="stylesheet" href="static/css/color.css">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.css">
+  <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="static/css/prettyPhoto.css">
+  <title>{{title}}</title>
+</head>
+
+<body>
+  <!--Wrapper Start-->
+  <div class="wrapper">
+    <!--Header Start-->
+    {% include "./widgets/header.html" %}
+    <!--Header End-->
+    <!--Main Slider Start-->
+    {% with banner_title = title %}
+    {% include "./widgets/small_banner.html" %}
+    {% endwith %}
+    <!--Main Slider Start-->
+    <!--Main Content Start-->
+    <div class="main-content innerpagebg wf100">
+      <!--team Page Start-->
+      <div class="team wf100 p80">
+        <!--Start-->
+        <div class="player-squad">
+          <div class="container">
+            <div class="row">
+              <!--Fixture Start-->
+              <div class="col-lg-8">
+                <!--Last Match Result Start-->
+                <div class="last-match-result-full mb-60">
+                  <h6>Last Match Result</h6>
+                  <div class="p30">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="match-left">
+                          <div class="mtl-left"> <img src="images/nmf-logo1.png" alt=""> <strong>North Carolina</strong>
+                          </div>
+                          <div class="mscore"> <strong>2</strong> loss </div>
+                          <ul>
+                            <li>Charlie Darren <span>(1 goal)</span></li>
+                            <li>kevin Jamie <span>(1 goal)</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="lmr-info">
+                          <strong>Super Euro League</strong>
+                          <p>Indy Eleven Qualified for Semi Final</p>
+                          <img src="images/sp.png" alt="">
+                          <p>17 October, 2020</p>
+                          <p>New Expo Stadium, NYK</p>
+                          <a href="fixtures-layout-2.html#" class="mh">Match Highlights</a>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="match-right">
+                          <div class="mscore"> <strong>2</strong> loss </div>
+                          <div class="mtl-right"> <img src="images/nmf-logo2.png" alt=""> <strong>Indy Eleven</strong>
+                          </div>
+                          <ul>
+                            <li> Jon Taylor <span>(1 goal)</span></li>
+                            <li> Steven Dean <span>(1 goal)</span></li>
+                            <li> Smith Ross <span>(1 goal)</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Last Match Result End-->
+                <!--Next Matches Schedule Start-->
+                <div class="next-matches-schedule wf100">
+                  <h2 class="stitle">Next Matches Schedule</h2>
+                  <!--Box Start-->
+                  <div class="nms-box">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="team-logo-left"> <strong>Chirston Battery</strong> <img src="images/mlogo1.png"
+                            alt=""> </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="nms-info">
+                          <strong class="vs">VS</strong>
+                          <p> <strong>Super Euro League</strong></p>
+                          <p>20 December, 2018 | 04:00 PM GMT+</p>
+                          <p><span>New Expo Stadium, NYK</span></p>
+                          <a href="fixtures-layout-2.html#">Buy Your Ticket</a>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="team-logo-right"><img src="images/mlogo2.png" alt=""> <strong>Charlotte</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Box End-->
+                </div>
+                <!--Next Matches Schedule End-->
+              </div>
+              <!--Fixture End-->
+              <!--Sidebar Start-->
+              {% include "./widgets/side_pan.html" %}
+              <!--Sidebar End-->
+            </div>
+          </div>
+        </div>
+        <!--End-->
+      </div>
+      <!--team Page End-->
+    </div>
+    <!--Main Content End-->
+    <!--Main Footer Start-->
+    {% include "./widgets/footer.html" %}
+    <!--Main Footer End-->
+  </div>
+  <!--Wrapper End-->
+  <!-- Optional JavaScript -->
+  <script src="static/js/jquery-3.3.1.min.js"></script>
+  <script src="static/js/popper.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/mobile-nav.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/isotope.js"></script>
+  <script src="static/js/jquery.prettyPhoto.js"></script>
+  <script src="static/js/jquery.countdown.js"></script>
+  <script src="static/js/custom.js"></script>
+</body>
+
+</html>
